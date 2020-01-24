@@ -1,0 +1,8 @@
+<p> Products </p>
+ <p *ngIf="products">
+   <h3>Product Id:{{products.productId+1}}</h3>
+  <h3>Product name:{{products.name}}</h3>
+  <h2>prdouct Description:{{products.description}}</h2>
+  <h2>product Cost:{{products.price}}</h2>
+  <button class="button fancy-button" (click)="addToProducts(products)">ADD TO CART</button>
+  <button class="button fancy-button" (click)="RemoveFromProducts(products)">REMOVE FROM CART</button>
